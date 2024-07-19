@@ -61,6 +61,25 @@
   
   
   <entry>
+    <title>Python语法规范</title>
+    <link href="/2023/11/30/Python%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/"/>
+    <url>/2023/11/30/Python%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Python注释方法"><a href="#Python注释方法" class="headerlink" title="Python注释方法"></a>Python注释方法</h2><p>1.使用#在目标代码行实现单行注释</p><p>2.使用单双引号在代码中实现多行注释</p><p>3.中文文档声明注释</p><h2 id="Python代码缩进"><a href="#Python代码缩进" class="headerlink" title="Python代码缩进"></a>Python代码缩进</h2><p>指每一行语句开始前的空白区域</p><p>用来表示Python程序间的包含和层级关系</p><p>类定义，函数定义，流程控制语句以及异常处理语句等行尾的冒号和下一行的缩进表示一个代码块的开始，而缩进结束，则表示一个代码块的结束</p><p>一般来说4个空格为一个缩进量</p><h2 id="Python保留字与标识符"><a href="#Python保留字与标识符" class="headerlink" title="Python保留字与标识符"></a>Python保留字与标识符</h2><p>保留字：指在Python中被赋予特定意义的一些单词，在开发程序时，不可以把这些保留字作为变量，函数，类，模块和其他对象的名称来使用，保留字严格区分大小写。开发中可以使用keyword这个第三方库查询具体的保留字</p><p>标识符：可以是字符（英文，中文）、下划线和数字，并且第一个字符不能是数字。不能使用Python中的保留字。标识符严格区分大小写。以下划线开头的标识符具有特殊意义，一般应避免使用相似的标识符。通常不建议使用中文作为标识符。</p><p>标识符的命名规范：</p><p>1.模块名尽量短小，并且全部使用小写字母，可以使用下划线分割多个字母 eg: leisiuser_infor</p><p>2.包名尽量短小，并且全部使用小写字母，不推荐使用下划线 eg: register.func</p><p>3.类名采用单词首字母大写的形式 eg: MyClass</p><p>4.模块内部的类采用“_”+Pascal风格的类名组成 eg: _InnerMyClass</p><p>5.函数、类的属性和方法的命名，全部使用小写字母，多个字母之间使用下划线分隔</p><p>6.常量命名时采用全部大写字母，可以使用下划线</p><p>7.使用单下划线“_”开头的模块变量或函数是受保护的，在使用”from xxx import xxx”语句从模块中导入时，这些模块变量或函数不能被导入</p><p>8.使用双下划线”__”开头的实例变量或方法是类私有的</p><p>9.以双下划线开头和结尾的是Python的专用标识</p><h2 id="Python变量与常量"><a href="#Python变量与常量" class="headerlink" title="Python变量与常量"></a>Python变量与常量</h2><p>变量的语法结构：变量名&#x3D;value    eg: user&#x3D;jay</p><p>变量的命名规则：</p><p>1.变量名必须是一个有效的标识符</p><p>2.变量名不能使用Python中的保留字</p><p>3.慎用类似O、I等大小写一样的字母</p><p>4.选择有意义的单词作为变量名</p><p>常量的命名规范：全部使用大写字母，一般不建议修改它的值</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>你听得到</title>
     <link href="/2023/11/20/%E4%BD%A0%E5%90%AC%E5%BE%97%E5%88%B0/"/>
     <url>/2023/11/20/%E4%BD%A0%E5%90%AC%E5%BE%97%E5%88%B0/</url>
