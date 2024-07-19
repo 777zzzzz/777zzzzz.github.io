@@ -80,6 +80,25 @@
   
   
   <entry>
+    <title>Python学习前言</title>
+    <link href="/2023/11/23/Python%E5%AD%A6%E4%B9%A0%E5%89%8D%E8%A8%80/"/>
+    <url>/2023/11/23/Python%E5%AD%A6%E4%B9%A0%E5%89%8D%E8%A8%80/</url>
+    
+    <content type="html"><![CDATA[<h1 id="程序设计语言"><a href="#程序设计语言" class="headerlink" title="程序设计语言"></a>程序设计语言</h1><p>程序设计语言一般分为三种，分别是：机器语言，汇编语言以及高级语言。</p><p>机器语言：是一种二进制语言 ，能够直接使用二进制代码表达指令，是计算机硬件可以直接识别和执行的程序设计语言</p><p>汇编语言：使用方便记符与机器语言中的指令一一对应</p><p>高级语言：接近自然语言的一种计算机程序设计语言,Python，Java都是高级语言</p><p>采用编译方式运行的语言叫做静态语言，例如Java，采用解释方式运行的语言叫做脚本语言，例如Python，PHP等</p><h1 id="Python语言的特点"><a href="#Python语言的特点" class="headerlink" title="Python语言的特点"></a>Python语言的特点</h1><p>1.编译简单，语法简洁</p><p>2.粘性拓展，开源理念</p><p>3.通用灵活，强制可读</p><p>4.支持中文，模式多样</p><p>5.平台无关，类库丰富</p><h1 id="Python的应用领域"><a href="#Python的应用领域" class="headerlink" title="Python的应用领域"></a>Python的应用领域</h1><p>1.Web开发：Django,Flask,Tornado等后端框架</p><p>2.数据分析与科学计算：Numpy.Pandas,Matplotlib等第三方库</p><p>3.人工智能和机器学习：Tensorflow,pyTorch,keras等第三方库</p><p>4.自动化测试和运维：Selenium库在自动化测试和运维领域有着举足轻重的作用</p><p>5.网络爬虫游戏开发</p><h1 id="python开发工具"><a href="#python开发工具" class="headerlink" title="python开发工具"></a>python开发工具</h1><p>许多第三方开发工具，例如Pycharm,Anaconda等</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>你听得到</title>
     <link href="/2023/11/20/%E4%BD%A0%E5%90%AC%E5%BE%97%E5%88%B0/"/>
     <url>/2023/11/20/%E4%BD%A0%E5%90%AC%E5%BE%97%E5%88%B0/</url>
