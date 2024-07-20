@@ -24,7 +24,7 @@
 <meta property="og:description" content="Python数据类型1.整数类型：没有小数部分的数值，包含正整数、负整数和零。可以使用十进制、二进制（0b或0B)、八进制(0o或0O)、十六进制(0x或0X）表示 2.浮点类型：带有小数点的数值，由整数部分和小数部分组成。注意：两个浮点数进行运算时有概率会出现不确定的位数问题，可以使用round保留小数。Python中的复数与数学中的复数形式一致,都由实部和虚部组成。在Python中使用.rea">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-12-05T11:12:35.000Z">
-<meta property="article:modified_time" content="2024-07-19T14:41:39.419Z">
+<meta property="article:modified_time" content="2024-07-20T02:19:20.719Z">
 <meta property="article:author" content="Kong">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary_large_image">
@@ -341,8 +341,8 @@
 <p>布尔值为False的情况如下</p>
 <p>1.False或者是None</p>
 <p>2.数值中的0，包含0.0，虚数0</p>
-<p>3.空虚列，包含空格字符串、空元组、空列表、空字典、空集合</p>
-<p>4.自定义对象的实例 该对象的”_<em>bool</em><em>()”方法返回False或”_<em>len</em></em>()方法返回0</p>
+<p>3.空序列，包含空格字符串、空元组、空列表、空字典、空集合</p>
+<p>4.自定义对象的实例 该对象的”bool()”方法返回False或”len()”方法返回0</p>
 <h1 id="数据类型的转换"><a href="#数据类型的转换" class="headerlink" title="数据类型的转换"></a>数据类型的转换</h1><table>
 <thead>
 <tr>
@@ -635,7 +635,7 @@
 <td align="center">取反、正号、负号</td>
 </tr>
 <tr>
-<td align="center">*、&#x2F;%、&#x2F;&#x2F;</td>
+<td align="center">*、&#x2F;、%、&#x2F;&#x2F;</td>
 <td align="center">算术运算符</td>
 </tr>
 <tr>
