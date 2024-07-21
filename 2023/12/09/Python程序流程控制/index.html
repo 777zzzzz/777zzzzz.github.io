@@ -16,15 +16,15 @@
   <meta name="author" content="Kong">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Python注释方法1.使用#在目标代码行实现单行注释 2.使用单双引号在代码中实现多行注释 3.中文文档声明注释 Python代码缩进指每一行语句开始前的空白区域 用来表示Python程序间的包含和层级关系 类定义，函数定义，流程控制语句以及异常处理语句等行尾的冒号和下一行的缩进表示一个代码块的开始，而缩进结束，则表示一个代码块的结束 一般来说4个空格为一个缩进量 Python保留字与标识符保留">
+    <meta name="description" content="Python程序流程控制程序描述方式常用的程序描述方式有三种，分别是自然语言、流程图、伪代码 自然语言：就是使用人类语言，直接描述程序 流程图：是用一系列图形、流程线和文字说明描述程序的基本操作和控制流程，主要适用于较短的算法 伪代码：是介于自然语言和编程语言之间的一种算法描述语言，如果程序比较小可以直接使用代码描述 程序的组织结构程序的组织结构分为：顺序结构、选择&#x2F;分支结构以及循环结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python语法规范">
-<meta property="og:url" content="http://irreplaceable.love/2023/11/30/Python%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/index.html">
+<meta property="og:title" content="Python程序流程控制">
+<meta property="og:url" content="http://irreplaceable.love/2023/12/09/Python%E7%A8%8B%E5%BA%8F%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/index.html">
 <meta property="og:site_name" content="Kong">
-<meta property="og:description" content="Python注释方法1.使用#在目标代码行实现单行注释 2.使用单双引号在代码中实现多行注释 3.中文文档声明注释 Python代码缩进指每一行语句开始前的空白区域 用来表示Python程序间的包含和层级关系 类定义，函数定义，流程控制语句以及异常处理语句等行尾的冒号和下一行的缩进表示一个代码块的开始，而缩进结束，则表示一个代码块的结束 一般来说4个空格为一个缩进量 Python保留字与标识符保留">
+<meta property="og:description" content="Python程序流程控制程序描述方式常用的程序描述方式有三种，分别是自然语言、流程图、伪代码 自然语言：就是使用人类语言，直接描述程序 流程图：是用一系列图形、流程线和文字说明描述程序的基本操作和控制流程，主要适用于较短的算法 伪代码：是介于自然语言和编程语言之间的一种算法描述语言，如果程序比较小可以直接使用代码描述 程序的组织结构程序的组织结构分为：顺序结构、选择&#x2F;分支结构以及循环结构">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-30T12:15:26.000Z">
-<meta property="article:modified_time" content="2024-07-21T01:24:51.353Z">
+<meta property="article:published_time" content="2023-12-09T01:14:42.000Z">
+<meta property="article:modified_time" content="2024-07-21T01:19:57.132Z">
 <meta property="article:author" content="Kong">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary_large_image">
@@ -33,7 +33,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Python语法规范 - Kong</title>
+  <title>Python程序流程控制 - Kong</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Python语法规范"></span>
+            <span id="subtitle" data-typed-text="Python程序流程控制"></span>
           
         </div>
 
@@ -210,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-11-30 20:15" pubdate>
-          2023年11月30日 晚上
+        <time datetime="2023-12-09 09:14" pubdate>
+          2023年12月9日 上午
         </time>
       </span>
     
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          913 字
+          1.1k 字
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          8 分钟
+          9 分钟
         
       </span>
     
@@ -278,37 +278,58 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Python语法规范</h1>
+            <h1 id="seo-header">Python程序流程控制</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="Python注释方法"><a href="#Python注释方法" class="headerlink" title="Python注释方法"></a>Python注释方法</h2><p>1.使用#在目标代码行实现单行注释</p>
-<p>2.使用单双引号在代码中实现多行注释</p>
-<p>3.中文文档声明注释</p>
-<h2 id="Python代码缩进"><a href="#Python代码缩进" class="headerlink" title="Python代码缩进"></a>Python代码缩进</h2><p>指每一行语句开始前的空白区域</p>
-<p>用来表示Python程序间的包含和层级关系</p>
-<p>类定义，函数定义，流程控制语句以及异常处理语句等行尾的冒号和下一行的缩进表示一个代码块的开始，而缩进结束，则表示一个代码块的结束</p>
-<p>一般来说4个空格为一个缩进量</p>
-<h2 id="Python保留字与标识符"><a href="#Python保留字与标识符" class="headerlink" title="Python保留字与标识符"></a>Python保留字与标识符</h2><p>保留字：指在Python中被赋予特定意义的一些单词，在开发程序时，不可以把这些保留字作为变量，函数，类，模块和其他对象的名称来使用，保留字严格区分大小写。开发中可以使用keyword这个第三方库查询具体的保留字</p>
-<p>标识符：可以是字符（英文，中文）、下划线和数字，并且第一个字符不能是数字。不能使用Python中的保留字。标识符严格区分大小写。以下划线开头的标识符具有特殊意义，一般应避免使用相似的标识符。通常不建议使用中文作为标识符。</p>
-<p>标识符的命名规范：</p>
-<p>1.模块名尽量短小，并且全部使用小写字母，可以使用下划线分割多个字母 eg: user_infor</p>
-<p>2.包名尽量短小，并且全部使用小写字母，不推荐使用下划线 eg: register.func</p>
-<p>3.类名采用单词首字母大写的形式 eg: MyClass</p>
-<p>4.模块内部的类采用“_”+Pascal风格的类名组成 eg: _InnerMyClass</p>
-<p>5.函数、类的属性和方法的命名，全部使用小写字母，多个字母之间使用下划线分隔</p>
-<p>6.常量命名时采用全部大写字母，可以使用下划线</p>
-<p>7.使用单下划线“_”开头的模块变量或函数是受保护的，在使用”from xxx import xxx”语句从模块中导入时，这些模块变量或函数不能被导入</p>
-<p>8.使用双下划线”__”开头的实例变量或方法是类私有的</p>
-<p>9.以双下划线开头和结尾的是Python的专用标识</p>
-<h2 id="Python变量与常量"><a href="#Python变量与常量" class="headerlink" title="Python变量与常量"></a>Python变量与常量</h2><p>变量的语法结构：变量名&#x3D;value    eg: user&#x3D;jay</p>
-<p>变量的命名规则：</p>
-<p>1.变量名必须是一个有效的标识符</p>
-<p>2.变量名不能使用Python中的保留字</p>
-<p>3.慎用类似O、I等大小写一样的字母</p>
-<p>4.选择有意义的单词作为变量名</p>
-<p>常量的命名规范：全部使用大写字母，一般不建议修改它的值</p>
+                <h1 id="Python程序流程控制"><a href="#Python程序流程控制" class="headerlink" title="Python程序流程控制"></a>Python程序流程控制</h1><h2 id="程序描述方式"><a href="#程序描述方式" class="headerlink" title="程序描述方式"></a>程序描述方式</h2><p>常用的程序描述方式有三种，分别是自然语言、流程图、伪代码</p>
+<p>自然语言：就是使用人类语言，直接描述程序</p>
+<p>流程图：是用一系列图形、流程线和文字说明描述程序的基本操作和控制流程，主要适用于较短的算法</p>
+<p>伪代码：是介于自然语言和编程语言之间的一种算法描述语言，如果程序比较小可以直接使用代码描述</p>
+<h2 id="程序的组织结构"><a href="#程序的组织结构" class="headerlink" title="程序的组织结构"></a>程序的组织结构</h2><p>程序的组织结构分为：顺序结构、选择&#x2F;分支结构以及循环结构</p>
+<p>顺序结构：按程序语句的自然顺序，从上到下、依次执行每条语句的程序。一般有赋值、输入输出语句等</p>
+<p>选择&#x2F;分支结构：也称为分支结构，是按照条件选择执行不同的代码段。</p>
+<p>单分支结构语句规范：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> 表达式<span class="hljs-number">1</span>:<br>	语句块<span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+
+<p>双分支结构语句规范：</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs actionscript"><span class="hljs-keyword">if</span> 表达式<span class="hljs-number">1</span>：<br>	语句块<span class="hljs-number">1</span><br><span class="hljs-keyword">else</span>:<br>	语句块<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
+
+<p>多分支结构语句规范：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> 表达式<span class="hljs-number">1</span>:<br>    语句块<span class="hljs-number">1</span><br><span class="hljs-keyword">elif</span> 表达式<span class="hljs-number">2</span>:<br>    语句块<span class="hljs-number">2</span><br><span class="hljs-keyword">elif</span> 表达式n:<br>    语句块n<br><span class="hljs-keyword">else</span>:<br>    语句块n+<span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+
+<p>单分支结构、双分支结构和多分支结构在实际开发中是可以互相嵌套使用的、内层的分支结构将作为外层的分支结构的语句块使用</p>
+<p>循环结构：</p>
+<p>在Python中循环结构分两类，一类是遍历循环结构for，一类是无限循环结构while</p>
+<p>遍历循环结构for的语句结构</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> 循环变量 <span class="hljs-keyword">in</span>遍历对象:<br>    语句块<br></code></pre></td></tr></table></figure>
+
+<p>for…else…结构</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> 循环变量 <span class="hljs-keyword">in</span> 遍历对象:<br>    语句块<span class="hljs-number">1</span><br><span class="hljs-keyword">else</span>；<br>	语句块<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
+
+<p>无限循环while结构</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">while</span> 表达式:<br>    语句块<br></code></pre></td></tr></table></figure>
+
+<p>while…else…结构</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">while</span> 表达式:<br>    语句块<span class="hljs-number">1</span><br><span class="hljs-keyword">else</span>:<br>    语句块<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
+
+<p>while循环的四个步骤：</p>
+<p>1.初始化变量</p>
+<p>2.条件判断</p>
+<p>3.语句块</p>
+<p>4.改变变量</p>
+<p>循环结构也可以互相嵌套，在一个循环结构中嵌套另外一个完整的循环结构就称为嵌套循环</p>
+<h2 id="程序跳转语句"><a href="#程序跳转语句" class="headerlink" title="程序跳转语句"></a>程序跳转语句</h2><p>break程序跳转语句用于跳出循环结构，通常与if一起搭配使用</p>
+<p>break程序跳转语句的语法结构</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">while</span> 表达式<span class="hljs-number">1</span>:<br>    执行代码<br>    <span class="hljs-keyword">if</span> 表达式<span class="hljs-number">2</span>:<br>        <span class="hljs-keyword">break</span><br></code></pre></td></tr></table></figure>
+
+<p>continue的作用是用于跳过本次循环的后续代码，而继续执行下一次循环操作，continue在循环中通常也是与if一起搭配使用</p>
+<p>continue程序跳转语句的语法结构</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">while</span> 表达式<span class="hljs-number">1</span>:<br>    执行代码<br>    <span class="hljs-keyword">if</span> 表达式<span class="hljs-number">2</span>:<br>       <span class="hljs-keyword">continue</span><br><span class="hljs-comment">###################</span><br><span class="hljs-keyword">for</span> 循环变量 <span class="hljs-keyword">in</span> 遍历对象:<br>    执行代码<br>    <span class="hljs-keyword">if</span> 表达式:<br>        <span class="hljs-keyword">continue</span><br></code></pre></td></tr></table></figure>
+
+<p>空语句pass</p>
+<p>pass是Python中的保留字，在语法结构中只起到占位符的作用，使语法结构完整，不报错。一般可用在if、for、while、函数的定义、类的定义中</p>
 
                 
               </div>
@@ -333,8 +354,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Python语法规范</div>
-      <div>http://irreplaceable.love/2023/11/30/Python语法规范/</div>
+      <div>Python程序流程控制</div>
+      <div>http://irreplaceable.love/2023/12/09/Python程序流程控制/</div>
     </div>
     <div class="license-meta">
       
@@ -346,7 +367,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年11月30日</div>
+          <div>2023年12月9日</div>
         </div>
       
       
@@ -378,9 +399,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/12/05/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="Python数据类型">
+                      <a href="/2023/12/14/Python%E7%BB%84%E5%90%88%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="Python组合数据类型">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Python数据类型</span>
+                        <span class="hidden-mobile">Python组合数据类型</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -388,8 +409,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/11/23/Python%E5%AD%A6%E4%B9%A0%E5%89%8D%E8%A8%80/" title="Python学习前言">
-                        <span class="hidden-mobile">Python学习前言</span>
+                      <a href="/2023/12/05/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="Python数据类型">
+                        <span class="hidden-mobile">Python数据类型</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
