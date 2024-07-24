@@ -16,26 +16,24 @@
   <meta name="author" content="Kong">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Python文件及IO操作文件：存储在计算机的存储设备中的一组数据序列就是文件，不同类型的文件通过后缀名进行区分 Python中文件分为文本文件和二进制文件两种 Python操作文件的步骤： 1.打开文件 1变量名&#x3D;open(filename,mode,encoding)  2.操作文件 1变量名.read()  3.关闭文件 12变量名.close()变量名.write(s)  文件的状态和操作">
+    <meta name="description" content="Python进程与线程程序：英文单词为Program，是指一系列有序指令的集合，使用编程语言所编写，用于实现一定的功能 进程：进程则是指启动后的程序，系统会为进程分配内存空间 创建进程的方式 第一种创建进程的语法构： 1234567891011#第一种创建进程的语法构：Process(group&#x3D;None,target,name,args,kwargs)参数说明:1)group:表示分组，实际上不">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python文件及IO操作">
-<meta property="og:url" content="http://irreplaceable.love/2024/01/03/newpapername/index.html">
+<meta property="og:title" content="Python进程与线程">
+<meta property="og:url" content="http://irreplaceable.love/2024/07/24/Python%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Kong">
-<meta property="og:description" content="Python文件及IO操作文件：存储在计算机的存储设备中的一组数据序列就是文件，不同类型的文件通过后缀名进行区分 Python中文件分为文本文件和二进制文件两种 Python操作文件的步骤： 1.打开文件 1变量名&#x3D;open(filename,mode,encoding)  2.操作文件 1变量名.read()  3.关闭文件 12变量名.close()变量名.write(s)  文件的状态和操作">
+<meta property="og:description" content="Python进程与线程程序：英文单词为Program，是指一系列有序指令的集合，使用编程语言所编写，用于实现一定的功能 进程：进程则是指启动后的程序，系统会为进程分配内存空间 创建进程的方式 第一种创建进程的语法构： 1234567891011#第一种创建进程的语法构：Process(group&#x3D;None,target,name,args,kwargs)参数说明:1)group:表示分组，实际上不">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="g:\%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\Python\QQ_1721734101956.png">
-<meta property="article:published_time" content="2024-01-03T10:53:04.000Z">
-<meta property="article:modified_time" content="2024-07-24T02:43:37.159Z">
+<meta property="article:published_time" content="2024-07-24T12:48:23.000Z">
+<meta property="article:modified_time" content="2024-07-24T12:49:16.535Z">
 <meta property="article:author" content="Kong">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="g:\%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0\Python\QQ_1721734101956.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Python文件及IO操作 - Kong</title>
+  <title>Python进程与线程 - Kong</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -201,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Python文件及IO操作"></span>
+            <span id="subtitle" data-typed-text="Python进程与线程"></span>
           
         </div>
 
@@ -212,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-03 18:53" pubdate>
-          2024年1月3日 晚上
+        <time datetime="2024-07-24 20:48" pubdate>
+          2024年7月24日 晚上
         </time>
       </span>
     
@@ -280,223 +278,158 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Python文件及IO操作</h1>
+            <h1 id="seo-header">Python进程与线程</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Python文件及IO操作"><a href="#Python文件及IO操作" class="headerlink" title="Python文件及IO操作"></a>Python文件及IO操作</h1><p><strong>文件</strong>：存储在计算机的存储设备中的一组数据序列就是文件，不同类型的文件通过后缀名进行区分</p>
-<p>Python中文件分为文本文件和二进制文件两种</p>
-<p>Python操作文件的步骤：</p>
-<p>1.打开文件</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">变量名=<span class="hljs-built_in">open</span>(filename,mode,encoding)<br></code></pre></td></tr></table></figure>
+                <h1 id="Python进程与线程"><a href="#Python进程与线程" class="headerlink" title="Python进程与线程"></a>Python进程与线程</h1><p><strong>程序：</strong>英文单词为Program，是指一系列有序指令的集合，使用编程语言所编写，用于实现一定的功能</p>
+<p><strong>进程：</strong>进程则是指启动后的程序，系统会为进程分配内存空间</p>
+<p>创建进程的方式</p>
+<p>第一种创建进程的语法构：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#第一种创建进程的语法构：</span><br>Process(group=<span class="hljs-literal">None</span>,target,name,args,kwargs)<br>参数说明:<br><span class="hljs-number">1</span>)group:表示分组，实际上不使用，值默认为<span class="hljs-literal">None</span>即可<br><span class="hljs-number">2</span>)target:表示子进程要执行的任务，支持函数名<br><span class="hljs-number">3</span>)name:表示子进程的名称<br><span class="hljs-number">4</span>)args:表示调用函数的位置参数，以元组的形式进行传递<br><span class="hljs-number">5</span>)kwargs:表示调用函数的关键字参数，以字典的形式进行传递<br><span class="hljs-comment">#第二种创建进程的语法结构:</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">子进程</span>(<span class="hljs-title class_ inherited__">Process</span>):<br>	<span class="hljs-keyword">pass</span><br></code></pre></td></tr></table></figure>
 
-<p>2.操作文件</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">变量名.read()<br></code></pre></td></tr></table></figure>
-
-<p>3.关闭文件</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">变量名.close()<br>变量名.write(s)<br></code></pre></td></tr></table></figure>
-
-<p><strong>文件的状态和操作过程</strong></p>
-<p><img src="G:\学习笔记\Python\QQ_1721734101956.png" srcset="/img/loading.gif" lazyload></p>
-<p><strong>文件打开的模式</strong></p>
 <table>
 <thead>
 <tr>
-<th>文件的打开模式</th>
-<th>模式说明</th>
+<th>方法&#x2F;属性名</th>
+<th>功能描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>r</td>
-<td>以只读模式打开，文件指针在文件的开头，如果文件不存在，程序抛异常</td>
+<td>name</td>
+<td>当前进程实例别名，默认为Process-N</td>
 </tr>
 <tr>
-<td>rb</td>
-<td>以只读模式打开二进制文件，如图片文件</td>
+<td>pid</td>
+<td>当前进程对象的PID值</td>
 </tr>
 <tr>
-<td>w</td>
-<td>覆盖写模式，文件不存在创建，文件存在则内容覆盖</td>
+<td>is_alive()</td>
+<td>进程是否执行完，没执行完结果为True，否则为False</td>
 </tr>
 <tr>
-<td>wb</td>
-<td>覆盖写模式写入二进制数据，文件不存在则创建，文件存在则覆盖</td>
+<td>join(timeout)</td>
+<td>等待结束或等待timeout秒</td>
 </tr>
 <tr>
-<td>a</td>
-<td>追加写模式，文件不存在创建，文件存在，则在文件最后追加内容</td>
+<td>start()</td>
+<td>启动进程</td>
 </tr>
 <tr>
-<td>+</td>
-<td>与w&#x2F;r&#x2F;a等一同使用，在原功能的基础上增加同时读写功能</td>
+<td>run()</td>
+<td>如果没有指定target参数，则启动进程后，会调用父类中的run方法</td>
+</tr>
+<tr>
+<td>terminate()</td>
+<td>强制终止进程</td>
 </tr>
 </tbody></table>
-<p><strong>文件的读写方法</strong></p>
-<table>
-<thead>
-<tr>
-<th>读写方法</th>
-<th>描述说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>file.read(size)</td>
-<td>从文件中读取size个字符或字节，如果没有给定参数，则读取文件中的全部内容</td>
-</tr>
-<tr>
-<td>file.readline(size)</td>
-<td>读取文件中的一行数据，如果给定参数，则为读取这一行中的size个字符或字节</td>
-</tr>
-<tr>
-<td>file.readlines()</td>
-<td>从文件中读取所有内容，结果为列表类型</td>
-</tr>
-<tr>
-<td>file.write(s)</td>
-<td>将字符串s写入文件</td>
-</tr>
-<tr>
-<td>file.writelines(lst)</td>
-<td>将内容全部为字符串的列表lst写入文件</td>
-</tr>
-<tr>
-<td>file.seek(offset）</td>
-<td>改变当前文件操作指针的位置,英文占一个字节，中文gbk编码占两个字节，utf-8</td>
-</tr>
-<tr>
-<td>编码占三个字节</td>
-<td></td>
-</tr>
-</tbody></table>
-<p><strong>文件的基本操作</strong></p>
-<p>with语句:又称上下文管理器，在处理文件时，无论是否产生异常都能保证with语句执行完毕后关闭已经打开的文件，这个过程是自动的无需手动操作。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#语法结构:</span><br><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(....) <span class="hljs-keyword">as</span> file:<br>	<span class="hljs-keyword">pass</span><br></code></pre></td></tr></table></figure>
+<p><strong>Pool进程池</strong></p>
+<p>进程池的原理是:创建一个进程池，并设置进程池中最大的进程数量。假设进程池中最大的进程数为3，现在有10个任务需要执行，那么进程池一次可以执行3个任务，4次即可完成全部任务的执行。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#创建进程池的语法结构</span><br>进程池对象=PooL(N)<br></code></pre></td></tr></table></figure>
 
-<h2 id="数据的组织维度及存储"><a href="#数据的组织维度及存储" class="headerlink" title="数据的组织维度及存储"></a>数据的组织维度及存储</h2><p>数据的组织维度:也称为数据的组织方式或存储方式，在Python中常用的数据组织方式可分为一维数据、二维数据和高维数据。</p>
-<p>一维数据：通常采用线性方式组织数据，一般使用Python中的列表、元组或者集合进行存储数据。<br>二维数据：二维数据也称表格数据由行和列组成，类似于Excel表格，在Python中使用二维列表进行存储。</p>
-<p>高维数据：高级数据则是使用Key-Value方式进行组织数据，在Python中使用字典进行存储数据。在Python中内置的json模块专门用于处理JSON(JavaScript Object Notation)格式的数据。</p>
-<p><strong>json模块的常用函数</strong></p>
 <table>
 <thead>
 <tr>
-<th>函数名称</th>
-<th>描述说明</th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody><tr>
-<td>json.dumps(obj)</td>
-<td>将Python数据类型转成JSON格式过程，编码过程</td>
+<td>apply_async(func,args,kwargs)</td>
+<td>使用非阻塞方式调用函数func</td>
 </tr>
 <tr>
-<td>json.loads(s)</td>
-<td>将JSON格式字符串转成Python数据类型，解码过程</td>
+<td>apply(func,args,kwargs)</td>
+<td>使用阻塞方式调用函数func</td>
 </tr>
 <tr>
-<td>json.dump(obj,file)</td>
-<td>与dumps()功能相同，将转换结果存储到文件file中</td>
+<td>close()</td>
+<td>关闭进程池，不再接收新任务</td>
 </tr>
 <tr>
-<td>json.load(file)</td>
-<td>与loads()功能相同，从文件file中读入数据</td>
+<td>terminate()</td>
+<td>不管任务是否完成，立即终止</td>
+</tr>
+<tr>
+<td>join0</td>
+<td>阻塞主进程，必须在terminate()或close()之后使用</td>
 </tr>
 </tbody></table>
-<h2 id="文件与目录的相关操作"><a href="#文件与目录的相关操作" class="headerlink" title="文件与目录的相关操作"></a>文件与目录的相关操作</h2><p><strong>os模块</strong>：Python内置的与操作系统文件相关的模块，该模块中语句的执行结果通常与操作系统有关，即有些函数的运行效果在Windows操作系统和MacOS系统中不一样。</p>
+<p><strong>并发和并行</strong></p>
+<p>并发是指两个或多个事件同一时间间隔发生，多个任务被交替轮换着执行，比如A事件是吃苹果，在吃苹果的过程中有快递员敲门让你收下快递，收快递就是B事件，那么收完快递继续吃没吃完的苹果。这就是并发。</p>
+<p>并行指两个或多个事件在同一时刻发生，多个任务在同一时刻在多个处理器上同时执行。比如A事件是泡脚，B事件是打电话，C事件是记录电话内容，这三件时则可以在同一时刻发生，这就是并行。</p>
+<p>进程之间的数据不共享，可以通过队列进行通信，队列是一种先进先出的数据结构</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#创建队列的语法结构</span><br>队列对象=Queue(N)<br></code></pre></td></tr></table></figure>
+
 <table>
 <thead>
 <tr>
-<th>函数名称</th>
-<th>描述说明</th>
+<th>方法名称</th>
+<th>功能描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>getcwd()</td>
-<td>获取当前的工作路径</td>
+<td>qsize()</td>
+<td>获取当前队列包含的消息数量</td>
 </tr>
 <tr>
-<td>listdir(path)</td>
-<td>获取path路径下的文件和目录信息，如果没有指定path，则获取当前路径下的文件和目录信息</td>
+<td>empty()</td>
+<td>判断队列是否为空，为空结果为True，否则为False</td>
 </tr>
 <tr>
-<td>mkdir(path)</td>
-<td>在指定路径下创建目录(文件夹)</td>
+<td>full0</td>
+<td>判断队列是否满了，满结果为True，否则为False</td>
 </tr>
 <tr>
-<td>makedirs(path)</td>
-<td>创建多级目录</td>
+<td>get(block&#x3D;True)</td>
+<td>获取队列中的一条消息，然后从队列中移除，block默认值为True</td>
 </tr>
 <tr>
-<td>rmdir(path)</td>
-<td>删除path下的空目录</td>
+<td>get_nowait()</td>
+<td>相当于get(block&#x3D;False),消息队列为空时，抛出异常</td>
 </tr>
 <tr>
-<td>removedirs(path)</td>
-<td>删除多级目录</td>
+<td>put(item,block&#x3D;True)</td>
+<td>将item消息放入队列,block默认为True</td>
 </tr>
 <tr>
-<td>chdir(path)</td>
-<td>把path设置为当前目录</td>
-</tr>
-<tr>
-<td>walk(path)</td>
-<td>遍历目录树，结果为元组，包含所有路径名、所有目录列表和文件列表</td>
-</tr>
-<tr>
-<td>remove(path)</td>
-<td>删除path指定的文件</td>
-</tr>
-<tr>
-<td>rename(old,new)</td>
-<td>将old重命名为new</td>
-</tr>
-<tr>
-<td>stat(path)</td>
-<td>获取path指定的文件信息</td>
-</tr>
-<tr>
-<td>startfile(path)</td>
-<td>启动path指定的文件</td>
+<td>put _nowait(item)</td>
+<td>相当于put(item,block&#x3D;False)</td>
 </tr>
 </tbody></table>
-<p><strong>os.path模块</strong>：是os模块的子模块，也提供了一些目录或文件的操作函数</p>
+<p><strong>线程</strong></p>
+<p>线程是CPU可调度的最小单位，被包含在进程中，是进程中实际的运作单位。一个进程中可以拥有N多个线程并发执行而每个线程并行执行不同的任务。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#函数式创建线程的语法结构:</span><br>t=Thread(group,target,name,args,kwargs)<br><span class="hljs-comment">#参数说明:</span><br><span class="hljs-number">1</span>)group:创建线程对象的进程组<br><span class="hljs-number">2</span>)target:创建的线程对象所要执行的目标函数<br><span class="hljs-number">3</span>)name:创建线程对象的名称，默认为“Tread-n”<br><span class="hljs-number">4</span>)args:用元组以位置参数的形式传入target对应函数的参数<br><span class="hljs-number">5</span>)kwargs:用字典以关键字参数的形式传入target对应函数的参数<br><span class="hljs-comment">#使用Thread子类创建线程的操作步骤是</span><br><span class="hljs-number">1</span>)自定义类继承threading模块下的Thread类<br><span class="hljs-number">2</span>)实现run方法<br></code></pre></td></tr></table></figure>
+
+<p>线程操作共享数据的安全问题</p>
+<p>使用Lock对象的acquire()方法可以使共享数据处于锁定状态，release()方法可以使共享数据处于非锁定状态</p>
+<p><strong>生产者与消费者模式</strong></p>
+<p>是线程模型中的经典问题，与编程语言无关。当程序中出现了明确的两类任务，一个任务负责生产数据，一个任务负责处理生产的数据时就可以使用该模式。</p>
+<p><strong>Python内置模块queue中的Queue类</strong></p>
 <table>
 <thead>
 <tr>
-<th>函数名称</th>
-<th>描述说明</th>
+<th>方法名称</th>
+<th>功能描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>abspath(path)</td>
-<td>获取目录或文件的绝对路径</td>
+<td>put(item)</td>
+<td>向队列中放置数据，如果队列为满，则阻塞</td>
 </tr>
 <tr>
-<td>exists(path)</td>
-<td>判断目录或文件在磁盘上是否存在，结果为bool类型，如果目录或文件在磁盘上存在，结果为True，否则为False</td>
+<td>get()</td>
+<td>从队列中取走数据，如果队列为空，则阻塞</td>
 </tr>
 <tr>
-<td>join(path,name)</td>
-<td>将目录与目录名或文件名进行拼接，相当于字符串的“+”操作</td>
+<td>join()</td>
+<td>如果队列不为空，则等待队列变为空</td>
 </tr>
 <tr>
-<td>splitext()</td>
-<td>分别获取文件名和后缀名</td>
-</tr>
-<tr>
-<td>basename(path)</td>
-<td>从path中提取文件名</td>
-</tr>
-<tr>
-<td>dirname(path)</td>
-<td>从path中提取路径(不包含文件名）</td>
-</tr>
-<tr>
-<td>isdir(path)</td>
-<td>判断path是否是有效路径</td>
-</tr>
-<tr>
-<td>isfile(path)</td>
-<td>判断file是否是有效文件</td>
+<td>task done()</td>
+<td>消费者从队列中取走一项数据，当队列变为空时，唤醒调用 join()的线程</td>
 </tr>
 </tbody></table>
 
@@ -523,8 +456,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Python文件及IO操作</div>
-      <div>http://irreplaceable.love/2024/01/03/newpapername/</div>
+      <div>Python进程与线程</div>
+      <div>http://irreplaceable.love/2024/07/24/Python进程与线程/</div>
     </div>
     <div class="license-meta">
       
@@ -536,7 +469,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年1月3日</div>
+          <div>2024年7月24日</div>
         </div>
       
       
@@ -568,17 +501,11 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/02/09/%E9%BE%99%E5%B9%B4%E5%BF%AB%E4%B9%90/" title="新年快乐">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">新年快乐</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/01/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/" title="新年快乐">
+                      <a href="/2024/02/09/%E9%BE%99%E5%B9%B4%E5%BF%AB%E4%B9%90/" title="新年快乐">
                         <span class="hidden-mobile">新年快乐</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
